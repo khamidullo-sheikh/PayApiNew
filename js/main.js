@@ -1,4 +1,4 @@
-let navMenu = document.querySelector(".header__nav");
+let navMenu = document.querySelector(".header");
 let btnOpen = document.querySelector(".nav__button--toggle");
 let btnClose = document.querySelector(".nav__menu--toggle");
 btnOpen.addEventListener("click", function(){

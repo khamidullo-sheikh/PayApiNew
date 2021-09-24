@@ -363,26 +363,14 @@ h3{
         flex-direction: column;
         padding: 50px 25px;
         position: absolute;
+        z-index: 2;
         top: 0;
         right: 0;
-        z-index: 2;
         background-color: var(--mirage_blue);
         transform: translateX(100vw);
         transition: transform .2s linear;
-        overflow: hidden;
-    }
-
-    .nav__menu::before{
-        content: '';
-        width: 780px;
-        height: 780px;
-        background-color: var(--san_juan_blue);
-        border-radius: 50%;
-        opacity: 0.15;
-        position: absolute;
-        top: -130%;
-        right: -83%;
-        z-index: -1;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
     .nav__toggle .nav__menu{
@@ -441,7 +429,7 @@ h3{
     }
 
     .footer__container::before{
-        top: 57%;
+        top: 150px;
         left: 50%;
         transform: translateX(-50%);
     }

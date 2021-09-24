@@ -465,7 +465,7 @@ input::placeholder{
     /* HERO */
 
     .hero__container::before{
-        top: -108%;
+        top: -790px;
     }
 
     .hero__text{
@@ -484,7 +484,7 @@ input::placeholder{
     /* INTRO */
 
     .intro__container::before{
-        top: -113%;
+        top: -655px;
     }
 
     .intro__text{
@@ -504,7 +504,6 @@ input::placeholder{
     }
 
     .intro__img{
-        width: 100%;
         grid-template-columns: repeat(2, 1fr);
     }
 
