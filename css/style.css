@@ -368,7 +368,7 @@ h3{
         right: 0;
         background-color: var(--mirage_blue);
         transform: translateX(100vw);
-        transition: transform .2s linear;
+        transition: transform .8s linear;
         overflow-x: hidden;
         overflow-y: auto;
     }
