@@ -1,0 +1,37 @@
+
+.nav__container{
+    position: relative;
+    z-index: 0;
+}
+
+.nav__container::before{
+    content: '';
+    width: 780px;
+    height: 780px;
+    border-radius: 50%;
+    background-color: var(--san_juan_blue);
+    opacity: .15;
+    position: absolute;
+    top: -585px;
+    right: -315px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 992px){
+    .nav__container::before{
+        top: -500px;
+        right: -515px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+
+    .nav__container{
+        position: unset;
+    }
+
+    .nav__container::before{
+        top: -650px;
+        right: -470px;
+    }
+}

@@ -27,6 +27,7 @@
     line-height: 117%;
     font-size: 1.5rem;
     border-radius: 24px;
+    text-align: center;
     transition: opacity .3s linear,
                 background-color .3s linear,
                 color .3s linear;
@@ -95,6 +96,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    flex-shrink: 0;
 }
 
 .nav__menu--button,
@@ -192,11 +194,39 @@ h3{
     line-height: 139%;
 }
 
+.wrapper{
+    overflow-x: hidden;
+}
+
 .container{
     width: 100%;
     max-width: 1140px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+/* FROM */
+
+.form{
+    width: 445px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.form__input{
+    width: 100%;
+    padding: 14px 27px;
+    background-color: var(--link_water_white);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    border: none;
+}
+
+.form__button{
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 /* NAVBAR */
@@ -243,6 +273,18 @@ h3{
 
 .nav__button{
     margin-left: auto;
+}
+
+/* CTA */
+
+.content__cta{
+    padding-bottom: 100px;
+}
+
+.cta__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* FOOTER */
@@ -332,11 +374,39 @@ h3{
     .container{
         padding: 0 40px;
     }
+
+    /* CTA */
+
+    .cta__content{
+        flex-direction: column;
+    }
+
+    .cta__title{
+        margin-bottom: 40px;
+    }
 }
 
 /* MOBLE */
 
 @media only screen and (max-width: 576px){
+    
+    /* STYLE */
+
+    .form__button{
+        position: unset;
+        width: 100%;
+    }
+
+    .form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__input{
+        margin-bottom: 16px;
+    }
+
     .container{
         padding: 0 25px;
     }
@@ -420,6 +490,14 @@ h3{
 
     .nav__link{
         color: var(--link_water_white);
+    }
+
+    /* CTA */
+
+    .cta__title{
+        font-size: 3.2rem;
+        line-height: 112.5%;
+        text-align: center;
     }
 
     /* FOOTER */

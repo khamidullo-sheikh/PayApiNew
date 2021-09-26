@@ -4,28 +4,6 @@
 
 /* STYLES */
 
-.form{
-    width: 445px;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.form__input{
-    width: 100%;
-    padding: 14px 27px;
-    background-color: var(--link_water_white);
-    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-    border-radius: 24px;
-    border: none;
-}
-
-.form__button{
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
 input::placeholder{
     font-family: inherit;
     color: var(--san_juan_blue);
@@ -37,7 +15,7 @@ input::placeholder{
 /* HERO */
 
 .header{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .hero__container{
@@ -290,18 +268,6 @@ input::placeholder{
     overflow: hidden;
 }
 
-/* CTA */
-
-.content__cta{
-    padding-bottom: 100px;
-}
-
-.cta__content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 
 /* ==================================== */
 
@@ -430,37 +396,11 @@ input::placeholder{
         margin-right: 25px;
     }
 
-    /* CTA */
-
-    .cta__content{
-        flex-direction: column;
-    }
-
-    .cta__title{
-        margin-bottom: 40px;
-    }
 }
 
 /* MOBLE */
 
 @media only screen and (max-width: 576px){
-
-    /* STYLE */
-
-    .form__button{
-        position: unset;
-        width: 100%;
-    }
-
-    .form{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .form__input{
-        margin-bottom: 16px;
-    }
 
     /* HERO */
 
@@ -554,13 +494,5 @@ input::placeholder{
 
     .services__box:not(:last-child){
         margin-bottom: 50px;
-    }
-
-    /* CTA */
-
-    .cta__title{
-        font-size: 3.2rem;
-        line-height: 112.5%;
-        text-align: center;
     }
 }
