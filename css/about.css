@@ -38,9 +38,14 @@
 }
 
 .main__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     height: 500px;
+    vertical-align: middle;
     position: relative;
     z-index: 0;
 }
@@ -119,8 +124,6 @@
     }
 
     .main__img{
-        width: 100%;
-        max-width: 769px;
         height: 267px;
     }
 
@@ -165,7 +168,6 @@
     }
 
     .main__img{
-        width: 375px;
         height: 300px;
     }
 
