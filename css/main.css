@@ -14,10 +14,6 @@ input::placeholder{
 
 /* HERO */
 
-.header{
-    overflow-x: hidden;
-}
-
 .hero__container{
     display: flex;
     align-items: center;
