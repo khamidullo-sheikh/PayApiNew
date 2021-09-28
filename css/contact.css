@@ -1,0 +1,192 @@
+/* IMPORT */
+
+@import url('style.min.css');
+@import url('figure.min.css');
+
+/* HERO */
+
+.header__hero{
+    padding: 45px 0;
+}
+
+.hero__title{
+    width: 730px;
+    font-size: 5.6rem;
+    line-height: 100%;
+}
+
+/* MAIN */
+
+.main__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 95px;
+} 
+
+.main__form{
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__form--input,
+.main__form--textarea{
+    background-color: transparent;
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-bottom: 1px solid #92A3B1;
+    margin-bottom: 10px;
+}
+
+.main__form--input::placeholder,
+.main__form--textarea::placeholder{
+    font-size: 1.5rem;
+    line-height: 166%;
+    color: var(--san_juan_blue);
+    opacity: .5;
+}
+
+.main__form--textarea{
+    resize: vertical;
+    height: 90px;
+}
+
+.main__form--checkbox{
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    width: 100%;
+}
+
+.checkbox__input{
+    position: relative;
+    z-index: 0;
+}
+
+.checkbox__label{
+    width: 25px;
+    height: 23px;
+    background-color: var(--san_juan_blue);
+    opacity: .25;
+    margin-right: 25px;
+    transition: opacity .3s linear,
+                background-image .3s linear;
+}
+
+.checkbox__input:checked~.checkbox__label{
+    background-color: var(--dark_pink);
+    background-image: url('../ico/tick-white.svg');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.main__form--btn{
+    align-self: flex-start;
+    padding: 16px 50px;
+}
+
+.main__body{
+    display: flex;
+    flex-direction: column;
+    width: 541px;
+}
+
+.main__body--par{
+    font-family: var(--secondary_font);
+    color: var(--san_juan_blue);
+    width: 445px;
+    margin-bottom: 40px;
+    font-size: 2.4rem;
+    line-height: 133%;
+    opacity: .75;
+}
+
+.main__body--img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 40px;
+    align-items: center;
+}
+
+/* ==================================== */
+
+
+/* TABLET */
+
+@media only screen and (max-width: 992px){
+    
+    /* HERO */
+
+    .header__hero{
+        padding-bottom: 60px;
+    }
+
+    .hero__title{
+        font-size: 4.8rem;
+        line-height: 116%;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* MAIN */
+
+    .main__container{
+        flex-direction: column;
+    }
+
+    .main__form{
+        margin-bottom: 65px;
+        width: 64.6%;
+    }
+
+    .main__body{
+        align-items: center;
+        text-align: center;
+        width: 78.6%;
+    }
+
+    .main__body--par{
+        width: 100%;
+    }
+}
+
+/* MOBLE */
+
+@media only screen and (max-width: 576px){
+    
+    /* HERO */
+
+    .header__hero{
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+
+    .hero__title{
+        font-size: 3.2rem;
+        line-height: 112.5%;
+    }
+
+    /* MAIN */
+
+    .main__form,
+    .main__body,
+    .main__body--par{
+        width: 100%;
+    }
+
+    .checkbox__par{
+        width: 85%;
+    }
+
+    .main__body--img{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 45px;
+        padding: 0 7.6%;
+    }
+}

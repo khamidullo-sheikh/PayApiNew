@@ -7,8 +7,8 @@
     <script src="https://kit.fontawesome.com/52ad92b2dc.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="25x25" href="./ico/icon.png">
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/about.min.css">
-    <title>PayApi || About</title>
+    <link rel="stylesheet" href="css/contact.min.css">
+    <title>PayApi || Contact</title>
 </head>
 <body>
     <div class="wrapper">
@@ -48,76 +48,51 @@
                     <button class="nav__button--toggle"></button>
                 </div>
             </div> 
+            <!-- HERO -->
+            <div class="header__hero hero">
+                <div class="hero__container container">
+                    <h1 class="hero__title">
+                    Submit a help request and we’ll get in touch shortly.
+                    </h1>
+                </div>
+            </div>
         </header>
         <!-- CONTENT -->
         <main class="content">
             <!-- MAIN -->
             <section class="content__main main">
-                <div class="main__container container main__container--padding">
-                    <h1 class="main__title">
-                        We empower innovators by delivering access to the financial system
-                    </h1>
+               <div class="main__container container">
+                    <form action="https://echo.htmlacademy.ru" class="main__form" method="POST">
+                        <input class="main__form--input" type="text" placeholder="Name" required aria-label="Enter your name" name="name">
+                        <input class="main__form--input" type="email" placeholder="Email Address" required aria-label="Enter your email address" name="email">
+                        <input class="main__form--input" type="text" placeholder="Company Name" required aria-label="Enter your company's name" name="company__name">
+                        <input class="main__form--input" type="text" placeholder="Title" required aria-label="Enter title" name="title">
+                        <textarea  class="main__form--textarea" name="message" cols="30" rows="10" placeholder="Message" required aria-label="Enter message"></textarea>
+                        <div class="main__form--checkbox checkbox">
+                            <input class="checkbox__input visually-hidden" type="checkbox" checked id="checkbox" name="up__to__date" aria-label="Stay up-to-date with company announcements and updates to our API">
+                            <label class="checkbox__label" for="checkbox"></label>
+                            <p class="checkbox__par">
+                                Stay up-to-date with company announcements and updates to our API
+                            </p>
+                        </div>
+                        <button type="submit" class="main__form--btn btn btn--secondary__dark">
+                            Submit
+                        </button>
+                    </form>
                     <div class="main__body">
-                        <div class="main__body--box">
-                            <h2 class="main__body--title">
-                                Our Vision
-                            </h2>
-                            <p class="main__body--par">
-                                Our main goal is to build beautiful consumer experiences along with developer-friendly infrastructure. The result is an intelligent tool that gives everyone the ability to create amazing products that solve big problems. We are deeply focused on democratizing financial services through technology. 
-                            </p>
-                        </div>
-                        <div class="main__body--box">
-                            <h2 class="main__body--title">
-                                Our Business
-                            </h2>
-                            <p class="main__body--par">
-                                At the core of our platform is the technical infrastructure APIs that connect consumers. Our innovative product provides key insights for businesses and individuals, as well as robust reporting for traditional financial institutions and developers.  
-                            </p>
-                        </div>
+                        <p class="main__body--par">
+                            Join the thousands of innovators that are already building with us
+                        </p>
+                        <picture class="main__body--img">
+                            <img src="img/tesla-dark.svg" alt="Tesla">
+                            <img src="img/microsoft-dark.svg" alt="Microsoft">
+                            <img src="img/hp-dark.svg" alt="HP">
+                            <img src="img/oracle-dark.svg" alt="Oracle">
+                            <img src="img/google-dark.svg" alt="Google">
+                            <img src="img/nvidia-dark.svg" alt="Nvidia">
+                        </picture>
                     </div>
-                </div>  
-                <div class="main__img">
-                    <picture>
-                        <source src="img/content-img-mobile.jpg" srcset="img/content-img-mobile.jpg 1x, img/content-img-mobile@2x.jpg 2x" media="(max-width: 576px)">
-                        <img src="img/content-img.jpg" srcset="img/content-img.jpg 1x, img/content-img@2x.jpg 2x" alt="Content img">
-                    </picture>
-                </div>
-                <div class="main__container container">
-                    <div class="main__status status">
-                        <div class="status__info">
-                            <span class="status__info--span">Team Members</span>
-                            300+
-                        </div>
-                        <div class="status__info">
-                            <span class="status__info--span">Offices in the US</span>
-                            3
-                        </div>
-                        <div class="status__info">
-                            <span class="status__info--span">Transactions analyzed</span>
-                            10M+
-                        </div>
-                    </div>
-                </div>
-                <div class="main__container container main__container--padding">
-                    <div class="main__body">
-                        <div class="main__body--box">
-                            <h2 class="main__body--title">
-                                The Culture
-                            </h2>
-                            <p class="main__body--par">
-                                We strongly believe there's always an opportunity to learn from each other outside of day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. We always value cross-team collaboration and diversity of thought, no matter the job title. 
-                            </p>
-                        </div>
-                        <div class="main__body--box">
-                            <h2 class="main__body--title">
-                                The People
-                            </h2>
-                            <p class="main__body--par">
-                                We're all passionate about building a more efficient and inclusive financial infrastructure together. At PayAPI, we have diverse backgrounds and skills.  
-                            </p>
-                        </div>
-                    </div>
-                </div>
+               </div>
             </section>
             <!-- CTA -->
             <section class="content__cta cta">
